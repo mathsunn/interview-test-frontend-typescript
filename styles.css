@@ -1,9 +1,103 @@
 body {
     margin: 0;
     font-family: Ubuntu, sans-serif;
+    background-color: rgb(248, 248, 248);
 }
 
-.container {
+.logo {
+    display: block;
+    width: 140px;
+    margin: 0px auto 40px;
+}
+
+.logo {
+    vertical-align: middle;
+}
+
+#menu {
+    height: 50px;
+    margin-top: 10px;
+    line-height: 50px;
+    background-color: white;
+}
+
+
+#main .container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#main .column {
+    float: left;
+    width: 50%;
+    background-color: rgb(248, 248, 248);
+
+}
+
+#footer {
+    clear: both;
+}
+
+.block {
+    margin: 10px 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+#dashboard #welcome {
+    width: 100%;
+    text-align: center;
+}
+
+#dashboard h1 {
+    color: rgb(30, 140, 248);
+    border: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#dashboard .block {
+    font-size: 14px;
+}
+
+#dashboard .block h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+#dashboard .block .actions {
+    margin-top: 10px;
+}
+
+#dashboard .block .receipt {
+    background-color: #E1F1FE;
+    padding: 10px;
+}
+
+#dashboard .block .receipt .date{
+    font-weight: bold;
+    color: rgb(30, 140, 248);
+}
+
+#dashboard .block .actions a {
+    text-decoration: none;
+    color: rgb(30, 140, 248);
+    font-weight: bold;
+}
+
+
+#dashboard .block .company {
+   font-weight: bold;
+}
+
+#dashboard .block .address {
+    margin: 0;
+    color: gray;
+}
+
+
+#login-container {
     z-index: 2;
     background-color: rgb(30, 140, 248);
     background-image: url(/img/icons/henry-chill.png), url(/img/icons/buoy.png), url(/img/icons/sand.png), linear-gradient(to right, rgb(30, 140, 248), rgb(57, 46, 249));
@@ -71,7 +165,7 @@ body {
     background: linear-gradient(to right, rgb(30, 140, 248), rgb(57, 46, 249));
 }
 
-#login form  > .error {
+#login form > .error {
     background-color: rgb(255, 206, 208);
     color: rgb(255, 51, 56);
     margin-bottom: 50px;
@@ -83,16 +177,6 @@ body {
     position: relative;
     margin-bottom: 60px;
     text-align: left;
-}
-
-#login .logo {
-    display: block;
-    width: 140px;
-    margin: 0px auto 40px;
-}
-
-#login logo {
-    vertical-align: middle;
 }
 
 .forget-password {
@@ -119,3 +203,4 @@ body {
 #login input + .error {
     color: rgb(255, 51, 56);
 }
+
