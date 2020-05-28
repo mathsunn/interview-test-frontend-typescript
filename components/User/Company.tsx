@@ -17,8 +17,8 @@ const Company: React.FC = () => {
 
   useEffect(() => {
     async function fetchCompany() {
-      const data = await axios.get("/api/user/company");
-      setCompany(data.data);
+      const {data} = await axios.get("/api/user/company");
+      setCompany(data);
     }
 
     fetchCompany();

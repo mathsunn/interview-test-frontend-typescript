@@ -6,8 +6,8 @@ const Information: React.FC = () => {
 
   useEffect(() => {
     async function fetchInformation() {
-      const data = await axios.get("/api/user/information");
-      setFirstName(data.data.firstName);
+      const {data} = await axios.get("/api/user/information");
+      setFirstName(data.firstName);
     }
 
     fetchInformation();

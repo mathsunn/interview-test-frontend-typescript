@@ -11,8 +11,8 @@ const LastActivities: React.FC<Props> = () => {
 
   useEffect(() => {
     async function fetchActivities() {
-      const data = await axios.get("/api/user/activities");
-      setActivities(data.data);
+      const {data} = await axios.get("/api/user/activities");
+      setActivities(data);
     }
 
     fetchActivities();

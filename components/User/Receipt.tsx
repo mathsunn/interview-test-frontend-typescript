@@ -13,8 +13,8 @@ const Receipt: React.FC = () => {
 
   useEffect(() => {
     async function fetchReceipt() {
-      const data = await axios.get("/api/user/receipt");
-      const receipt = {...data.data};
+      const {data} = await axios.get("/api/user/receipt");
+      const receipt = {...data};
       receipt.date = moment(receipt.date);
       setReceipt(receipt);
     }
