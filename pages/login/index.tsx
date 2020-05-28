@@ -78,7 +78,7 @@ const LoginForm = withFormik<MyFormProps, FormValues>({
 })(InnerForm);
 
 const Index = () => (
-  <div className="container">
+  <div id="login-container">
     <div id="login">
       <LoginForm />
     </div>

@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Title from "../components/Title";
+import Link from "next/link";
 
 const Home: React.FC<{}> = () => (
   <div className="container">
@@ -10,6 +11,7 @@ const Home: React.FC<{}> = () => (
     </Head>
 
     <Title text="Test frontend." />
+    <Link href="/login">Se connecter</Link>
   </div>
 );
 
